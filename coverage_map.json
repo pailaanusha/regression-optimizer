@@ -1,0 +1,1 @@
+{"tests/test_app.py::test_login_success": ["app.py"], "tests/test_app.py::test_login_fail": ["app.py"], "tests/test_app.py::test_add_product": ["app.py"], "tests/test_app.py::test_discount": ["app.py"], "tests/test_app.py::test_payment": ["app.py"]}

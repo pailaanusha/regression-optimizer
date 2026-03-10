@@ -1,0 +1,6 @@
+test,status
+tests/test_app.py::test_login_success,pass
+tests/test_app.py::test_login_fail,fail
+tests/test_app.py::test_add_product,pass
+tests/test_app.py::test_discount,pass
+tests/test_app.py::test_payment,pass
