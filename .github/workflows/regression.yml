@@ -1,0 +1,30 @@
+
+name: Optimized Regression Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+
+  regression-test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10
+
+    - name: Install Dependencies
+      run: |
+        pip install pytest pandas google-generativeai
+
+    - name: Run Optimized Tests
+      run: |
+        python run_tests.py
